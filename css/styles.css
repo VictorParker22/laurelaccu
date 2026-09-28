@@ -1148,3 +1148,11 @@ p {
   display: block;
   line-height: 1;
 }
+
+.photo-wide {
+  aspect-ratio: 16 / 9;
+}
+
+.photo-wide img {
+  object-position: center 35%;
+}

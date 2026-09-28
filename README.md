@@ -20,5 +20,7 @@ Then visit http://localhost:8000.
 
 ## Photos
 
-- `images/laurel-portrait.webp` is Laurel's portrait, used in the home hero, the About page header, and (cropped to landscape) the wide photo slots on the home and About pages. To swap in a different photo for the wide slots, add the file and update the `crop-top` image `src` in `index.html` and `about.html`.
+- `images/laurel-portrait.webp` is Laurel's portrait, used in the home hero and the About page header.
+- `images/laurel-treatment-1.webp` shows Laurel treating a patient, used in the "About Laurel" section of the home page.
+- `images/laurel-treatment-2.webp` is a second treatment photo, shown full width on the About page.
 - `images/yinova-flyer.jpg` is the Yinova announcement shown on the booking page.
