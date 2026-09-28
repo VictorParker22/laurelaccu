@@ -620,7 +620,7 @@ p {
 
 .page-hero {
   position: relative;
-  min-height: min(78vh, 720px);
+  min-height: min(88vh, 820px);
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -633,7 +633,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 22%;
 }
 
 .page-hero::after {
@@ -744,5 +744,44 @@ p {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+}
+
+/* Landscape crop of the portrait used in the wide photo slots. */
+.rounded-img .crop-top {
+  object-position: center 22%;
+}
+
+.rounded-img:has(.crop-top) {
+  aspect-ratio: 16 / 10;
+}
+
+/* On wide screens, hold the portrait on the right and fade the left
+   side into a dark panel so the heading sits clear of the face. */
+@media (min-width: 861px) {
+  .page-hero {
+    background: #4a3a33;
+  }
+
+  .page-hero img {
+    left: 34%;
+    width: 66%;
+    object-position: center 22%;
+  }
+
+  .page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to right, #4a3a33 30%, rgba(74, 58, 51, 0.85) 40%, rgba(74, 58, 51, 0) 58%);
+  }
+
+  .page-hero .wrap {
+    z-index: 2;
+  }
+
+  .page-hero .wrap > * {
+    max-width: 46%;
   }
 }

@@ -18,11 +18,7 @@ python3 -m http.server 8000
 
 Then visit http://localhost:8000.
 
-## Replacing placeholder photos
+## Photos
 
-Two placeholder images are used until real photos are added:
-
-- Save a portrait photo as `images/laurel-portrait.jpg` (4:5 works best). It is used in the home hero and the About page header; `images/laurel-portrait.svg` shows only until the JPG exists.
-- Save a second photo as `images/laurel-practice.jpg` (landscape, 16:10 works best). It is the "Laurel in practice" image on the home and About pages; `images/laurel-practice.svg` shows only until the JPG exists.
-
-`images/yinova-flyer.jpg` is the Yinova announcement shown on the booking page.
+- `images/laurel-portrait.webp` is Laurel's portrait, used in the home hero, the About page header, and (cropped to landscape) the wide photo slots on the home and About pages. To swap in a different photo for the wide slots, add the file and update the `crop-top` image `src` in `index.html` and `about.html`.
+- `images/yinova-flyer.jpg` is the Yinova announcement shown on the booking page.
