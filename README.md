@@ -25,3 +25,5 @@ Then visit http://localhost:8000.
 - `images/laurel-treatment-1.webp` shows Laurel treating a patient, used in the "About Laurel" section of the home page.
 - `images/laurel-treatment-2.webp` is a second treatment photo, shown full width on the About page.
 - `images/yinova-flyer.jpg` is the Yinova announcement shown on the booking page.
+- `images/herbal-kamwo.webp` shows Laurel training at Kamwo, used in the "Inside the formula" section of the Herbs page.
+- `images/herbal-tcm-apothecary.webp` (TCM display at the Cha Cha Tea Festival) and `images/herbal-dr-zhang.webp` (Laurel with Dr. Helen Qi Zhang) sit side by side near the bottom of the Herbs page.

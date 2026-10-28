@@ -1203,16 +1203,18 @@ p {
   color: var(--ink-soft);
 }
 
-.photo-placeholder {
-  aspect-ratio: 4 / 3;
+/* Columns sized to each photo's aspect ratio so both sit at the same height. */
+.photo-pair {
   display: grid;
-  place-items: center;
-  border: 1px dashed var(--sand-deep);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
+  grid-template-columns: 1.455fr 0.753fr;
+  gap: clamp(20px, 3vw, 36px);
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .photo-pair {
+    grid-template-columns: 1fr;
+  }
 }
 
 .testimonial {
@@ -1223,11 +1225,6 @@ p {
   font-family: var(--font-display);
   font-size: 1.5rem;
   line-height: 1.35;
-}
-
-.testimonial .placeholder-text {
-  color: var(--ink-mute);
-  font-style: italic;
 }
 
 .testimonial cite {
