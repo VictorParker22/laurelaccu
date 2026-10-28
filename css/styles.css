@@ -1238,3 +1238,8 @@ p {
   text-transform: uppercase;
   color: var(--terracotta-deep);
 }
+
+.cta-band p a {
+  color: var(--white);
+  text-decoration: underline;
+}
