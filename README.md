@@ -6,6 +6,7 @@ Static website for Laurel Fruehling, MAScHM — acupuncture and Chinese herbal m
 
 - `index.html` — landing page
 - `about.html` — About Laurel
+- `herbal.html` — online herbal consultations (coming February 2027)
 - `booking.html` — locations and how to book (Pacific College clinic and Yinova)
 
 ## Running locally
